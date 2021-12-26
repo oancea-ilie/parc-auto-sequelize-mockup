@@ -1,0 +1,110 @@
+.login-container{
+    margin: 0 1rem;
+    margin-top: 2rem;
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 4px 29px -4px rgba(148, 148, 148, 0.75);
+
+    p{
+        text-align: center;
+        color: $b;
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+    input{
+        width: 90%;
+        max-width: 260px;
+        border-radius: 10px;
+        padding: 0.2rem 0;
+        font-size: 1.2rem;
+        text-align: center; 
+        margin-bottom: 0.7rem;
+        border: 1px solid $y;
+        transition: .1s all;
+        color: $g;
+        background-color: white;
+    }
+    input:focus{
+        outline: none;
+        border: 2px solid $y;
+    }
+
+    .login-btns{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 260px;
+        margin-top: 1rem;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            background-color: $y;
+            padding: 0.4rem 1.4rem;
+            border-radius: 10px;
+            transition: .3s all;
+        }
+        a:hover{
+            background-color: $hy;
+        }
+
+        .sign-btn{
+            background-color: $b;
+        }
+        .sign-btn:hover{
+            background-color: $hb;
+        }
+    }
+
+
+    @include mq('sm'){
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+
+        .login-btns{
+            justify-content: space-between;
+            max-width: 260px;
+        }
+    }
+
+    @include mq('md'){
+        margin-top: 3rem;
+
+        p{
+            font-size: 1.3rem;
+        }
+        input{
+            font-size: 1.3rem;
+        }
+
+        .login-btns{
+            a{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @include mq('lg'){
+
+        p{
+            font-size: 1.4rem;
+        }
+        input{
+            font-size: 1.4rem;
+        }
+
+        .login-btns{
+            a{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.card{
+    background-color: $y;
+    border-radius: 5px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 370px;
+    transition: .4s all;
+    box-shadow: 5px 4px 29px -4px rgba(0,0,0,0.75);
+
+    img{
+        border-radius: 5px 5px 50px 50px;
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .marca{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        img{
+            width: 23px;
+        }
+
+        span{
+            margin-left: 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .model{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+        img{
+            width: 23px;
+        }
+
+        span{
+            margin-top: 0.1rem;
+            margin-left: 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .perioada-inchiriere{
+        margin: 0.5rem 0;
+        margin-top: 1rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        border: none;
+        background-color: white;
+        transition: .2s all;
+    }
+    .perioada-inchiriere:focus{
+        outline: none;
+    }
+
+    .card-btns{
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .descriere-btn{
+            margin-right: 1rem;
+            text-decoration: none;
+            color: white;
+            background-color: $black;
+            padding: 0.4rem 1.6rem;
+            border-radius: 5px;
+            transition: .3s all;
+        }
+        .descriere-btn:hover{
+            background-color: $g;
+        }
+
+        .inchiriere-btn{
+            transition: .3s all;
+            text-decoration: none;
+            color: white;
+            background-color: $b;
+            padding: 0.4rem 1.6rem;
+            border-radius: 5px;
+        }
+        .inchiriere-btn:hover{
+            background-color: $hb;
+        }
+    }
+
+    @include mq('sm'){
+        .marca{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
+        .model{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
+        .perioada-inchiriere{
+            font-size: 1.1rem;
+        }
+
+        .card-btns{
+            margin-bottom: 1.5rem;
+            .descriere-btn{
+                padding: 0.5rem 2rem;
+            }
+
+            .inchiriere-btn{
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+
+    @include mq('md'){
+        margin: 0;
+        max-width: 450px;
+
+        .marca{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
+        .model{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
+        .perioada-inchiriere{
+            font-size: 1.1rem;
+        }
+
+        .card-btns{
+            margin-bottom: 1.5rem;
+            .descriere-btn{
+                padding: 0.5rem 2rem;
+            }
+
+            .inchiriere-btn{
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+
+    @include mq('lg'){
+        .marca{
+
+            img{
+                width: 35px;
+            }
+            span{
+                font-size: 1.4rem;
+            }
+        }
+
+        .model{
+
+            img{
+                width: 35px;
+            }
+            span{
+                font-size: 1.4rem;
+            }
+        }
+
+        .perioada-inchiriere{
+            font-size: 1.2rem;
+        }
+
+        .card-btns{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            .descriere-btn{
+                padding: 0.6rem 2rem;
+                font-size: 1.2rem;
+            }
+
+            .inchiriere-btn{
+                padding: 0.6rem 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+.card:hover{
+    background-color: $b;
+
+    .card-btns{
+
+        .inchiriere-btn{
+            background-color: $y;
+        }
+        .inchiriere-btn:hover{
+            background-color: $hy;
+        }
+    }
+}

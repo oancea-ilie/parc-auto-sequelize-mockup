@@ -1,0 +1,35 @@
+header{
+    background-color: $y;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+
+    
+
+    @include mq('sm'){
+
+        height: 5rem;
+
+        .brand{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    @include mq('md'){
+
+        height: 5rem;
+
+        .brand{
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @include mq('lg'){
+        height: 6rem;
+    }
+
+
+}

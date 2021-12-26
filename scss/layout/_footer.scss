@@ -1,0 +1,38 @@
+footer{
+    height: 4rem;
+    background-color: $y;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+
+    p{
+
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: $b;
+            transition: .3s all;
+        }
+        a:hover{
+            color: $hb;
+        }
+    }
+
+    @include mq('sm'){
+
+        height: 5rem;
+    }
+
+    @include mq('md'){
+
+        font-size: 1.2rem;
+    }
+
+    @include mq('lg'){
+
+        height: 6rem;
+        font-size: 1.3rem;
+    }
+    
+}

@@ -1,0 +1,30 @@
+nav{
+
+    a{
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background-color: $b;
+        border-radius: 4px;
+        color: white;
+        transition: .3s all;
+    }
+    a:hover{
+        background-color: $hb;
+    }
+
+    @include mq('sm'){
+
+        a{
+            font-size: 1.2rem;
+        }
+    }
+
+    @include mq('md'){
+
+        a{
+            font-size: 1.3rem;
+        }
+    }
+
+    
+}
