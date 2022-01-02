@@ -30,6 +30,35 @@
         }
     }
 
+    .an{
+
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        img{
+            width: 23px;
+        }
+
+        span{
+            margin-left: 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .pret{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        img{
+            width: 23px;
+        }
+
+        span{
+            margin-left: 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+
     .model{
         display: flex;
         align-items: center;
@@ -103,6 +132,25 @@
             }
         }
 
+        .an{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+        .pret{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
         .model{
 
             img{
@@ -153,6 +201,28 @@
             }
         }
 
+        
+        .an{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
+        
+        .pret{
+
+            img{
+                width: 30px;
+            }
+            span{
+                font-size: 1.3rem;
+            }
+        }
+
         .perioada-inchiriere{
             font-size: 1.1rem;
         }
@@ -181,6 +251,26 @@
         }
 
         .model{
+
+            img{
+                width: 35px;
+            }
+            span{
+                font-size: 1.4rem;
+            }
+        }
+
+        .an{
+
+            img{
+                width: 35px;
+            }
+            span{
+                font-size: 1.4rem;
+            }
+        }
+
+        .pret{
 
             img{
                 width: 35px;

@@ -8,7 +8,11 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 5px 4px 29px -4px rgba(148, 148, 148, 0.75);
-
+    
+    .login-eror{
+        color: red;
+        margin-bottom: 1rem;
+    }
     p{
         text-align: center;
         color: $b;

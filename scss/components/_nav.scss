@@ -1,6 +1,6 @@
 nav{
 
-    a{
+    .conectare{
         text-decoration: none;
         padding: 0.5rem 1rem;
         background-color: $b;
@@ -8,21 +8,54 @@ nav{
         color: white;
         transition: .3s all;
     }
-    a:hover{
+    .conectare:hover{
         background-color: $hb;
+    }
+
+    .fa-user{
+        color: $b;
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+        transition: .2s all;
+    }
+    .fa-sign-out-alt{
+        color: $b;
+        transition: .2s all;
+        font-size: 1.5rem;
+    }
+
+    .fa-user:hover{
+        color: $hb;
+    }
+    .fa-sign-out-alt:hover{
+        color: $hb;
     }
 
     @include mq('sm'){
 
-        a{
+        .conectare{
             font-size: 1.2rem;
+        }
+
+        .fa-user{
+            font-size: 1.7rem;
+        }
+        .fa-sign-out-alt{
+            font-size: 1.7rem;
         }
     }
 
     @include mq('md'){
 
-        a{
+        .conectare{
             font-size: 1.3rem;
+        }
+
+        .fa-user{
+            font-size: 1.8rem;
+        }
+        .fa-sign-out-alt{
+            font-size: 1.8rem;
         }
     }
 

@@ -1,0 +1,33 @@
+
+.istoric-comenzi-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: $b;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+    .istoric-comenzi-container-card{
+        width: 220px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        background-color: $g;
+        color: white;
+        border-radius: 5px;
+        padding: .3rem;
+        p{
+            padding:0.4rem 0.5rem;
+        }
+    }
+
+    .istoric-comenzi-container-card:last-of-type{
+        margin-bottom: 0;
+    }
+}

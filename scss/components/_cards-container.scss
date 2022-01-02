@@ -3,6 +3,10 @@
     grid-template-columns: 1fr;
     justify-items: center;
 
+    @include mq('sm'){
+        margin:1rem auto;
+    }
+
     @include mq('md'){
         margin:0 auto;
         margin-top: 2rem;
