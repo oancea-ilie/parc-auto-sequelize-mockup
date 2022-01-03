@@ -30,4 +30,8 @@
     .istoric-comenzi-container-card:last-of-type{
         margin-bottom: 0;
     }
+
+    @include mq('lg'){
+        height: 325px;
+    }
 }

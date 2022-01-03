@@ -10,6 +10,23 @@
     transition: .4s all;
     box-shadow: 5px 4px 29px -4px rgba(0,0,0,0.75);
 
+    .car-info{
+        display: none;
+        text-align: center;
+        font-size: 1.3rem;
+        color: rgb(14, 197, 14);
+    }
+
+    p{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0.7rem;
+
+        span{
+            color: red;
+        }
+    }
+
     img{
         border-radius: 5px 5px 50px 50px;
         width: 100%;
@@ -119,6 +136,7 @@
         .inchiriere-btn:hover{
             background-color: $hb;
         }
+
     }
 
     @include mq('sm'){
@@ -240,6 +258,13 @@
     }
 
     @include mq('lg'){
+        
+        .car-info{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
         .marca{
 
             img{
@@ -304,6 +329,10 @@
 
 .card:hover{
     background-color: $b;
+
+    .car-info{
+        color: white;
+    }
 
     .card-btns{
 

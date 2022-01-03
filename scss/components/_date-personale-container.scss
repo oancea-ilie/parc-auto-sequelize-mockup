@@ -1,20 +1,19 @@
 .date-personale-container{
     width: 80%;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     background-color: $y;
     padding: 1rem;
     font-size: 1.1rem;
     border-radius: 5px;
 
-    p{
+    h3{
         padding: 0.5rem 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+
         span{
-            display: inline-block;
-            width: 70px;
-            font-weight: bold;
-            padding-right: 0.3rem;
+            font-weight: normal;
+            font-size: 1.2rem;
         }
 
         a{
@@ -28,6 +27,7 @@
     }
 
     input{
+        width: 100%;
         display: none;
         margin: 0.5rem 0;
         border-radius: 5px;
@@ -44,6 +44,7 @@
     }
 
     button{
+        width: 100%;
         display: none;
         border: none;
         background-color: $b;
@@ -52,13 +53,106 @@
         transition: .3s all;
         cursor: pointer;
     }
+
     button:hover{
         background-color: $hb;
     }
+
     .info{
         font-size: 1.1rem;
         margin-top: 1rem;
         text-align: center;
         color: rgb(18, 209, 18);
+    }
+    @include mq('sm'){
+
+        h3{
+            width: 70%;
+            margin: 0 auto;
+            max-width: 230px;
+            font-size: 1.2rem;
+
+            span{
+                font-size: 1.2rem;
+            }
+
+            a{
+                font-size: 1.2rem;
+            }
+        }
+        input{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 230px;
+        }
+
+        button{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 230px;
+        }
+    }
+
+    @include mq('md'){
+
+        h3{
+            width: 70%;
+            margin: 0 auto;
+            max-width: 230px;
+            font-size: 1.3rem;
+
+            span{
+                font-size: 1.3rem;
+            }
+
+            a{
+                font-size: 1.3rem;
+            }
+        }
+        input{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 230px;
+        }
+
+        button{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 230px;
+        }
+
+    }
+
+    @include mq('lg'){
+        height: 325px;
+
+
+        h3{
+            width: 70%;
+            margin: 0 auto;
+            max-width: 250px;
+            font-size: 1.4rem;
+            span{
+                font-size: 1.4rem;
+            }
+
+            a{
+                font-size: 1.4rem;
+            }
+        }
+        input{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 250px;
+            padding: 0.3rem 1rem;
+        }
+
+        button{
+            width: 70%;
+            margin:  0.5rem auto;
+            max-width: 250px;
+            padding: 0.4rem 1rem;
+        }
+        
     }
 }
